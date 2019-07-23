@@ -1,0 +1,30 @@
+include mixins
+
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(name="viewport" content="width=device-width")
+		meta(name="description" content="")
+
+		title Professional Cleaning Service
+		link(rel="stylesheet" href=`/css/main.css?v=${Date.now()}`)
+
+	body
+		.about-block
+			.about-block__items
+				span.about-block__items__greeting Welcome to
+				h3.about-block__items__title Professional cleaning service
+				p.about-block__items__text Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla vitae elit libero, a pharetra augue. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla vitae elit libero, a pharetra augue. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla vitae elit libero.
+				a.about-block__items__button(href="#") DETAILS
+			.about-block__pictures
+				img.about-block__pictures__picture(src="/images/pictures/about/1.jpg", alt="1")
+				img.about-block__pictures__picture(src="/images/pictures/about/2.jpg", alt="2")
+				img.about-block__pictures__picture(src="/images/pictures/about/3.jpg", alt="3")
+				img.about-block__pictures__picture(src="/images/pictures/about/4.jpg", alt="4")
+
+
+
+		script(src=`/js/vendor.js?v=${Date.now()}`)
+		script(src=`/js/main.js?v=${Date.now()}`)

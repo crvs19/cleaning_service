@@ -1,0 +1,38 @@
+@mixin featurecardtitle {
+	font-family: Montserrat;
+	font-size: 24px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: -1px;
+	color: #ffffff;
+}
+@mixin featurecardtext {
+	font-family: Montserrat;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.86;
+	letter-spacing: -1px;
+	color: #ffffff;
+}
+@mixin featurecardbutton {
+	width: 24px;
+	height: 24px;
+	margin-top: 57px;
+	outline: none;
+	border: solid 1px #ffffff;
+	border-radius: 50px;
+	background: transparent url(/images/sprites/svg/path.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+
+	&:hover {
+		background-color: grey;
+	}
+	&:active {
+		background-color: #ffffff;
+	}
+}

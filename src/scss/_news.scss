@@ -1,0 +1,180 @@
+.news-background {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin: 200px 0 0 0;
+
+    @media (max-width: 890px) {
+        margin: 120px 0 0 0;
+    }
+
+    @media (max-width: 500px) {
+        margin: 90px 0 0 0;
+    }
+
+    &__shape {
+        position: absolute;
+        right: 0;
+        top: -420px;
+        width: 437px;
+        height: 1425px;
+        z-index: -100;
+
+        @media (max-width: 640px) {
+            opacity: 0.3;
+        }
+    }
+}
+
+.news-block{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 1141px;
+
+    @media (max-width: 1141px) {
+        width: 100%;
+        padding: 0 2% 0 2%;
+    }
+
+    &__head {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    
+        &__title {
+            @include blockheadtitle;
+
+            @media (max-width: 530px) {
+                font-size: 26px;
+            }
+            @media (max-width: 325px) {
+                font-size: 24px;
+            }
+        }
+        &__text {
+            @include blockheadtext;
+
+            @media (max-width: 530px) {
+                font-size: 15px;
+            }
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        @media (max-width: 630px) {
+            flex-direction: column;
+            position: relative;
+        }
+
+        &__picture {
+            width: 49%;
+            height: 100%;
+            box-shadow: 0 0 40px 3px rgba(76, 186, 216, 0.5);
+            object-fit: contain;
+
+            @media (max-width: 630px) {
+                width: 100%;
+                z-index: -5;
+                opacity: 0.4;
+            }
+        }
+
+        &__items {
+            width: 47%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            @media (max-width: 630px) {
+                width: 94%;
+                padding: 0 3% 0 3%;
+                z-index: 5;
+                position: absolute;
+                top: 0;
+            }
+        
+            &__date {
+                height: 25px;
+                font-family: Montserrat;
+                font-size: 14px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                letter-spacing: -1px;
+                text-align: center;
+                color: #212121;
+                padding: 7px 25px 7px 25px;
+                background-color: #faec8c;
+                border-radius: 25px;
+                margin: 20% 0 0 0;
+
+                @media (max-width: 920px) {
+                    margin: 10% 0 0 0;
+                }
+                @media (max-width: 800px) {
+                    margin: 5% 0 0 0;
+                    background-color: #ffffff;
+                }
+                @media (max-width: 640px) {
+                    background-color: #faec8c;
+                }
+            }
+            &__title {
+                font-family: Montserrat;
+                font-size: 24px;
+                font-weight: 400;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.67;
+                letter-spacing: -2px;
+                color: #212121;
+                width: 90%;
+                margin: 5% 0 0 0;
+
+                @media (max-width: 800px) {
+                    margin: 3% 0 0 0;
+                }
+                @media (max-width: 740px) {
+                    font-size: 21px;
+                }
+            }
+            &__text {
+                font-family: Montserrat;
+                font-size: 14px;
+                font-weight: 300;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 2.57;
+                letter-spacing: -1px;
+                color: #333333;
+                width: 95%;
+                margin: 3% 0 0 0;
+
+                @media (max-width: 740px) {
+                    line-height: 2;
+                }
+                @media (max-width: 690px) {
+                    font-size: 13px;
+                }
+                @media (max-width: 340px) {
+                    width: 105%;
+                }
+            }
+            &__button {
+                @include buttonblue;
+                margin: 10% 0 0 0;
+
+                @media (max-width: 800px) {
+                    margin: 5% 0 0 0;
+                }
+            }
+        }
+    }
+}

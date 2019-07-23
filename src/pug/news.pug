@@ -1,0 +1,31 @@
+include mixins
+
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(name="viewport" content="width=device-width")
+		meta(name="description" content="")
+
+		title Professional Cleaning Service
+		link(rel="stylesheet" href=`/css/main.css?v=${Date.now()}`)
+
+	body
+		.news-background
+			img.news-background__shape(src='/images/backgrounds/news-bg.svg')
+			.news-block
+				.news-block__head
+					.news-block__head__title Cleaning Industry News
+					.news-block__head__text We write about industry developments, training, health and safety, eco-friendly cleaning products, recycling practices and advice for working with professional cleaners
+				.news-block__content
+					img.news-block__content__picture(src='/images/pictures/news/pic-borderless.jpg' alt='newspic')
+					.news-block__content__items
+						span.news-block__content__items__date 14.04.2019
+						h3.news-block__content__items__title Apartment cleaning
+						p.news-block__content__items__text Sed nec blandit nibh. Pellentesque commodo suscipit gravida. Sed sit amet ex sed mi dignissim elementum in ut quam. Vivamus laoreet non mauris eget mattis. Nam turpis orci, consectetur vel accumsan sed, condimentum at sapien. Nunc ut egestas neque, eu hendrerit lacus.
+						button.news-block__content__items__button
+
+
+		script(src=`/js/vendor.js?v=${Date.now()}`)
+		script(src=`/js/main.js?v=${Date.now()}`)

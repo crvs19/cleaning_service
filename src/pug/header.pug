@@ -1,0 +1,46 @@
+include mixins
+
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(name="viewport" content="width=device-width")
+		meta(name="description" content="")
+
+		title yoga
+		link(rel="stylesheet" href=`/css/main.css?v=${Date.now()}`)
+
+	body
+		.header-background
+			.header
+				.header-menu
+					ul.header-menu__navbar
+						a.header__navbar__option(href="#") Stories
+						a.header__navbar__option(href="#") Company
+						a.header__navbar__option(href="#") About
+						a.header__navbar__option(href="#") Contact
+					.header-menu__contact-block
+						.header-menu__contact-block__phone-number + 515 243 3273
+						button.header-menu__contact-block__login-button Login
+
+				.header-content
+					.header-content__sidebar
+						a(href="#") Instagram
+						a(href="#") Dribble
+						a(href="#") Twitter
+						a(href="#") Facebook
+					.header-content__social-links
+						a.dev-soc-link(href="#")
+						a.dev-soc-link(href="#")
+						a.dev-soc-link(href="#")
+						a.dev-soc-link(href="#")
+					.header-content__text-block
+						.header-content__text-block__title Professional cleaning service
+						.header-content__text-block__text Corporate social responsibility policymaker inclusion, resist; compassion mass incarceration correlation white paper. 
+						.header-content__text-block__button
+					.header-picture
+
+
+		script(src=`/js/vendor.js?v=${Date.now()}`)
+		script(src=`/js/main.js?v=${Date.now()}`)

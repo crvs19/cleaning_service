@@ -1,0 +1,34 @@
+include pug/mixins
+
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(name="viewport" content="width=device-width")
+		meta(name="description" content="")
+
+		title Professional Cleaning Service
+		link(rel="stylesheet" href=`/css/main.css?v=${Date.now()}`)
+
+	body
+
+		include pug/header
+
+		include pug/features
+
+		include pug/services
+
+		include pug/customer-reviews
+
+		include pug/news
+
+		include pug/about
+
+		include pug/options
+
+		include pug/footer
+
+		script(src=`/js/vendor.js?v=${Date.now()}`)
+		script(src=`/js/main.js?v=${Date.now()}`)
+

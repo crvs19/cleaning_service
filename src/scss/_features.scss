@@ -1,0 +1,160 @@
+.feature-block {
+    width: 949px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 41px 0 0 0;
+
+    @media (max-width: 470px) {
+        margin: 80px 0 0 0;
+    }
+
+    @media (max-width: 949px) {
+        width: 100%;
+        padding: 0 2% 0 2%;
+    }
+
+    &__head {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        &__title {
+            @include blockheadtitle;
+
+            @media (max-width: 530px) {
+                font-size: 26px;
+                margin: 0 0 12px 0;
+            }
+        }
+        &__text {
+            @include blockheadtext;
+
+            @media (max-width: 530px) {
+                font-size: 15px;
+                margin: 0 0 30px 0;
+            }
+        }
+    }
+    &__cards {
+        display: flex;
+        flex-wrap: wrap;
+        height: 560px;
+        justify-content: space-between;
+
+        &__aqua {
+            flex-basis: 48.89%;
+            height: 220px;
+            background: #b4ecde;
+            border-radius: 4px;
+
+            &__title {
+                @include featurecardtitle;
+                padding: 15% 0 0 15%;
+
+                @media (max-width: 530px) {
+                    font-size: 20px;
+                    padding: 15% 0 0 10%;
+                }
+            }
+        }
+        &__blue {
+            flex-basis: 48.89%;
+            height: 320px;
+            background: #a0d8eb;
+            border-radius: 4px;
+
+            &__content {
+                width: 85%;
+                display: flex;
+                flex-direction: column;
+                padding: 6% 0 0 13%;
+
+                &__title {
+                    @include featurecardtitle;
+
+                    @media (max-width: 419px) {
+                        margin: 10px 0 10px 0;
+                        font-size: 20px;
+                    }
+                }
+                &__text {
+                    @include featurecardtext;
+
+                    @media (max-width: 419px) {
+                        margin: 5px 0 10px 0;
+                        font-size: 13px;
+                    }
+                }
+                &__button {
+                    @include featurecardbutton;
+
+                    @media (max-width: 635px) {
+                        margin-top: 20px;
+                    }
+                    @media (max-width: 530px) {
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+        &__yellow {
+            flex-basis: 48.89%;
+            height: 320px;
+            background: rgba(255, 210, 74, 0.5) url(/images/backgrounds/wavecards.png);
+            border-radius: 4px;
+            margin-top: -81px;
+
+            &__content {
+                width: 85%;
+                display: flex;
+                flex-direction: column;
+                padding: 6% 0 0 13%;
+
+                &__title {
+                    @include featurecardtitle;
+
+                    @media (max-width: 419px) {
+                        margin: 10px 0 10px 0;
+                        font-size: 20px;
+                    }
+                }
+                &__text {
+                    @include featurecardtext;
+
+                    @media (max-width: 419px) {
+                        margin: 5px 0 10px 0;
+                        font-size: 13px;
+                    }
+                }
+                &__button {
+                    @include featurecardbutton;
+                    
+                    @media (max-width: 635px) {
+                        margin-top: 20px;
+                    }
+                    @media (max-width: 530px) {
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+        &__pink {
+            flex-basis: 48.89%;
+            height: 220px;
+            background: #f7dfe7;
+            border-radius: 4px;
+            margin-top: 19px;
+
+            &__title {
+                @include featurecardtitle;
+                padding: 15% 0 0 15%;
+
+                @media (max-width: 530px) {
+                    font-size: 19px;
+                    padding: 15% 0 0 10%;
+                }
+            }
+        }
+    }
+}

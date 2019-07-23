@@ -1,0 +1,40 @@
+include mixins
+
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(name="viewport" content="width=device-width")
+		meta(name="description" content="")
+
+		title Profesional Cleaning Service
+		link(rel="stylesheet" href=`/css/main.css?v=${Date.now()}`)
+
+	body
+		.footer-background 
+			.footer
+				.footer__subscribe-block
+					h2.footer__subscribe-block__title Get notified <br> about new amazing products
+					p.footer__subscribe-block__text Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has been the industry's standard dummy text ever since. 
+					.footer__subscribe-block__email
+						input.footer__subscribe-block__email__input(type="email" placeholder="E-mail")
+						input.footer__subscribe-block__email__button(type="submit" value="")
+					ul.footer__subscribe-block__info-bar
+						a.infolink(href="#") Product
+						a.infolink(href="#") Company
+						a.infolink(href="#") Learn More
+						a.infolink(href="#") Get in touch
+				.footer__developer-info
+					a.footer__developer-info__logo(href="#")
+					.footer__developer-info__social-links
+						a.dev-soc-link(href="#")
+						a.dev-soc-link(href="#")
+						a.dev-soc-link(href="#")
+						a.dev-soc-link(href="#")
+					.footer__developer-info__copyright © 2019 Charge.wp
+
+
+
+		script(src=`/js/vendor.js?v=${Date.now()}`)
+		script(src=`/js/main.js?v=${Date.now()}`)

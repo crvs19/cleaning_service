@@ -1,0 +1,51 @@
+include mixins
+
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(name="viewport" content="width=device-width")
+		meta(name="description" content="")
+
+		title Professional Cleaning Service
+		link(rel="stylesheet" href=`/css/main.css?v=${Date.now()}`)
+
+	body
+		.customer-reviews
+			h2.customer-reviews__head Happy Customers, Happy Homes
+			.customer-reviews__commas
+				.customer-reviews__commas__left
+				.customer-reviews__commas__right
+			
+			div(id="slider-2" class="slider-2")
+
+				div(class="slider-2__items")
+					div(class="slider-2__item slider-2__item_active")
+						p Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has been the industry's standard dummy text ever since. Corporate social responsibility policymaker inclusion, resist; compassion mass incarceration correlation white paper. Program area energize optimism radical shared value policymaker milestones.
+						img(src="/images/pictures/review-slider_cards/1.png", alt="Photo")
+						h5 Mollie Jennings
+					div(class="slider-2__item")
+						p Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has been the industry's standard dummy text ever since. Corporate social responsibility policymaker inclusion, resist; compassion mass incarceration correlation white paper. Program area energize optimism radical shared value policymaker milestones.
+						img(src="/images/pictures/review-slider_cards/2.png", alt="Photo")
+						h5 Peter Griffin
+					div(class="slider-2__item")
+						p Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has been the industry's standard dummy text ever since. Corporate social responsibility policymaker inclusion, resist; compassion mass incarceration correlation white paper. Program area energize optimism radical shared value policymaker milestones.
+						img(src="/images/pictures/review-slider_cards/3.png", alt="Photo")
+						h5 Homer Simpson
+				
+				ol(class="slider-2__indicators")
+					li(class="slider-2__indicator slider-2__indicator_active" data-slide-to="0")
+					li(class="slider-2__indicator" data-slide-to="1")
+					li(class="slider-2__indicator" data-slide-to="2")
+
+				a(class="slider-2__control slider-2__control_prev" href="#" role="button")
+				a(class="slider-2__control slider-2__control_next" href="#" role="button")
+			
+
+
+
+
+
+		script(src=`/js/vendor.js?v=${Date.now()}`)
+		script(src=`/js/main.js?v=${Date.now()}`)

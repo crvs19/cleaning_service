@@ -5,6 +5,8 @@
 	display: flex;
 	justify-content: center;
 	background: url(/images/backgrounds/wave.png);
+	background-repeat: no-repeat;
+	background-position: center;
 	z-index: 10;
 
 	@media (max-width: 1141px) {

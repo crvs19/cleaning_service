@@ -358,6 +358,7 @@ gulp.task('serve', () => {
 				baseDir: './build',
 				middleware,
 			},
+			browser: ['chrome', 'firefox'],
 		});
 });
 
